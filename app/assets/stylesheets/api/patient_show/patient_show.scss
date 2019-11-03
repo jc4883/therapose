@@ -1,0 +1,118 @@
+
+
+
+
+.patient-show {
+    background-color: rgba(72, 98, 60, .95);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 135vh;
+    color: tan;
+    align-items: center;
+
+
+    > header {
+        width: 100%;
+        height: 65vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        > div {
+            margin-top: 4px;
+            padding: 18px;
+            outline: 2px solid tan;
+            outline-offset: -10px;
+            width: 90%;
+            box-shadow: 0 0 32px rgba(0, 0, 0, 0.35), 0 1px 3px rgba(0, 0, 0, 0.1);
+            .background-lights {
+                background: url("https://github.com/jc4883/therapy/blob/master/app/assets/images/background_lights.jpg?raw=true");
+                background-size: cover;
+                height: 32vh;
+                
+                width: 100%;
+    
+                .profile-photo {
+                    width: 200px !important;
+                    height: 200px !important;
+                    background: url(https://github.com/jc4883/jc4883.github.io/blob/master/img/headshot_reduced.jpg?raw=true);
+                    background-size: cover;
+                    border-radius: 50%;
+                    /* margin-top: 1vh; */
+                    position: absolute;
+                    left: 20%;
+                    top: 22%;
+                    background-position: center;
+                    border: 3px solid white;
+                }
+            }
+        
+
+
+            > section { /* container  */
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                height: 30vh;
+                > section {                 
+                    display: flex;
+                    -webkit-box-orient: horizontal;
+                    -webkit-box-direction: normal;
+                    flex-direction: row;
+                    width: 100%;
+                    justify-content: space-between;
+                    margin-top: 10vh;
+                    height: auto;
+                    > div {
+                        text-align: start;
+                        margin-left: 18%;
+                    }
+                }
+            }
+        }
+    }
+
+    > section {
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        flex-direction: column;
+        width: 90%;
+        color: tan;
+        outline: 2px solid tan;
+        outline-offset: -10px;
+        background-color: rgba(81, 106, 69, 1);
+        box-shadow: 0 0 32px rgba(0, 0, 0, 0.35), 0 1px 3px rgba(0, 0, 0, 0.1);
+        margin: 30px;
+        padding: 20px;
+        align-items: start;
+        > h5 {
+            font-weight: 300;
+
+        }
+    }
+
+    > button {
+        color: white;
+        background-color: dodgerblue;
+        font-family: "Graphik", "Helvetica Neue", helvetica, "Apple Color Emoji", arial, sans-serif;
+        display: none;
+        -webkit-box-align: center;
+        align-items: center;
+        border-radius: 10px;
+        padding: 10px 14px;
+        -webkit-box-pack: center;
+        justify-content: center;
+        z-index: 1;
+        font-weight: 300;
+        font-size: 31px;
+        border: 2px solid white;
+    }
+
+    > button:hover {
+        transition: .2s;
+        transform: scale(1.1);
+    }
+    
+}

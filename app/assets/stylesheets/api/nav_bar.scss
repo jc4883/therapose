@@ -1,0 +1,231 @@
+#navigation-container {
+.circle {
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 50%;
+  background: #d147ec;
+  font-family: "Graphik", "Helvetica Neue", helvetica, "Apple Color Emoji", arial, sans-serif;
+  color: white;
+  font-size: 15px;
+}
+
+
+
+#nav-bar-symposia-logo {
+  height: 32px;
+  width: 30px;
+}
+
+
+#navigation {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    background-color: #F6F1EE;
+    flex-direction: row;
+    height: 40px;
+    width: 100%;   
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 1000;
+}
+
+
+#navigation li {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style-type: none;
+  
+  font-family: "Graphik", "Helvetica Neue", helvetica, "Apple Color Emoji", arial, sans-serif;
+  font-size: 19px;
+  padding-left: 5px;
+  font-weight: 700;
+}
+
+#nav-bar-symposia {
+  margin-top: 4px;
+  margin-left: 3px;
+  font-weight: 500;
+}
+
+#nav-bar-home, #nav-bar-pings{
+  font-weight: bold;
+  font-family: "Graphik", "Helvetica Neue", helvetica, "Apple Color Emoji", arial, sans-serif;
+  color: #283c46;
+  font-size: 17px;
+  text-decoration: none;
+  margin-right: 110px;
+}
+
+
+#profile-avatar {
+  margin-right: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+#nav-bar-home #nav-bar-pings {
+  font-family: "Graphik", "Helvetica Neue", helvetica, "Apple Color Emoji", arial, sans-serif;
+  font-size: 19px;
+  font-weight: 700;
+  margin: 20px;
+}
+
+#nav-icons ul{
+  display: flex;
+}
+
+
+#profile-picture:hover {
+  background-color: #2980B9;
+  outline: none;
+  transition: .4s;
+}
+
+ #profile-picture:focus {
+   outline: none;
+ }
+#profile-picture {
+  transition: .4s;
+}
+
+.profile-avatar {
+  position: relative;
+  display: inline-block;
+}
+
+.log-out-button {
+  margin-top: -10px;
+  margin-bottom: 8px;
+  margin-left: 20px;
+  background-color: #ffffff;
+  font-weight: 300;
+  color: #283c46;
+  float: left;
+  width: 20%;
+  border: none;
+  font-size: 14px;
+  font-family: "Graphik", "Helvetica Neue", helvetica, "Apple Color Emoji", arial, sans-serif;
+} 
+
+#personal-settings li, #message-from-socrates li{
+  background-color: #ffffff;
+  color: #283c46;
+  font-size: 16px;
+  font-family: "Graphik", "Helvetica Neue", helvetica, "Apple Color Emoji", arial, sans-serif;
+}
+
+#avatar-dropdown p {
+  padding-right: 25px;
+  padding-left: 30px;
+  color: #283c46;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.5;
+  font-family: "Graphik", "Helvetica Neue", helvetica, "Apple Color Emoji", arial, sans-serif;
+  position: relative;
+  z-index: 1000;
+}
+
+
+
+
+#avatar-dropdown {
+  position: fixed;
+  z-index: 4;
+}
+.dropdown-content {
+
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  width: 352px;
+  height: 390px;
+  z-index: 1;
+}
+.show {
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  margin-left: -318px;
+  margin-top: 33px;
+  border-radius: 5px;
+  box-shadow: 0 0 4px rgba(0,0,0,0.15), 0 5px 10px rgba(0,0,0,0.05);
+}
+
+
+
+
+
+
+#message-from-socrates, #personal-settings {
+  padding-left: 25px;
+  display: flex;
+  align-content: center;
+}
+
+.profile-avatar-line {
+  padding-top: 9px;
+  margin-left: 7px;
+  width: 122px;
+  height: 2px;
+  border-bottom: 1px solid lightgrey;
+}
+
+#feynman-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+}
+
+#feynman-gif {
+  height: 83%;
+  width: 83%;
+}
+
+.arrow-up {
+  display: none;
+}
+
+
+
+.show-triangle-boy {
+  display: block;
+  width: 0; 
+  height: 0; 
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #ffffff;
+  z-index: 2;
+}
+
+.show-line {
+      border-bottom: 1px solid lightgrey;
+}
+}
+
+.nav-link {
+    background-color: indianred;
+    color: tan;
+    border: 2px solid tan;
+    box-shadow: 0 0 32px rgba(0, 0, 0, 0.35), 0 1px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 26px;
+    margin-top: 9px;
+    padding-right: 16px !important;
+    padding-left: 16px !important;
+    padding-top: 4px !important;
+    padding-bottom: 4px !important;
+    color: tan !important;
+    transform: none;
+    transition: .2s;
+}
+
+.nav-link:focus {
+  outline:none;
+}

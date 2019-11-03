@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html id="html">
+  <head>
+    <title>Therapos</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+
+    <script type="text/javascript">
+      window.back_icon = "<%= image_url('back_icon.jpg') %>";
+      window.doctor = "<%= image_url('doctor.jpg') %>";
+      window.patient = "<%= image_url('patient.jpg') %>";
+      window.background_lights = "<%= image_url('background_lights.jpg') %>";
+      window.hang_up = "<%= image_url('hang_up.jpg') %>";
+      window.pick_up = "<%= image_url('pick_up.jpg') %>";
+      window.bonsai_background = "<%= image_url('bonsai_background.jpg') %>";
+    </script>
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>

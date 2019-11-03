@@ -1,0 +1,21 @@
+
+.therapist-index {
+    background: url("https://github.com/jc4883/AnimationDemo/blob/master/src/assets/woods.jpg?raw=true");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 93vh;
+    overflow: hidden;
+    > div {
+        padding: 4vh;
+        justify-content: space-evenly;
+    }
+
+    #categories {
+        width: 100%;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

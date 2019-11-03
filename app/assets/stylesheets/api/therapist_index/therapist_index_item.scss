@@ -1,0 +1,28 @@
+.index_item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid black;
+    font-family: "Graphik", "Helvetica Neue", helvetica, "Apple Color Emoji", arial, sans-serif;
+    font-weight: 600;
+    color: tan;
+    border-radius: 5px;
+    background-color: rgba(72, 98, 60, .95);
+    outline: 2px solid tan;
+    outline-offset: -10px;
+    width: 30vh;
+    height: 23vh;
+    margin-bottom: 5vh;
+    > h5 {
+        font-weight: 300;
+        font-size: 14px;
+        padding-left: 20px;
+        padding-right: 20px;
+    } 
+    > h2 {
+        margin-bottom: 1em;
+    }
+}
+
+

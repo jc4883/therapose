@@ -1,0 +1,47 @@
+.login-page {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(to bottom, #d2bc9f, #d2c6b8);
+    .login-form-therapose {
+        display: flex;
+        flex-direction: column;
+        margin: 22px;
+        width: 100%;
+        > button {
+            cursor: pointer;
+            background-color: steelblue;
+            border: none;
+            margin-top: 10px;
+            height: 35px;
+            border-radius: 17px;
+            color: white;
+            font-family: "Graphik", "Helvetica Neue", helvetica, "Apple Color Emoji", arial, sans-serif;
+            font-weight: 600;
+            font-size: 18px;
+        }
+        #signup-directions {
+            margin: 0 auto;
+            margin-bottom: 10px;
+        }
+    }
+
+    > section {
+        color: darkslategray;
+        outline: 2px solid tan;
+        outline-offset: -10px;
+        display: -webkit-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20vh;
+        box-shadow: 0 0 4px rgba(0,0,0,0.15), 0 5px 10px rgba(0,0,0,0.05);
+        padding: 33px;
+        background-color: rgba(81, 106, 69, 0.4);
+    }
+
+    #new-username {
+        margin-bottom: 15px;
+    }
+}

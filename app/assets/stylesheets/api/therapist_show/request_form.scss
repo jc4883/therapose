@@ -1,0 +1,179 @@
+@keyframes enlargeImage {
+    0% {
+        transform: none;
+        border-radius: 10px;
+    }
+
+    20%{
+        transform: scale(.15) rotateZ(-360deg);
+        border-radius: 500px;
+    }
+/*
+    85% {
+        border-radius: 10px;
+        transform: scale(2.2) rotateZ(0deg);
+    }
+    
+*/
+    85% {
+        opacity: 1;
+    }
+    99% {
+        opacity: 0;
+        transform: scale(4);
+        border-radius: 10px;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0;
+        display: none;
+    }
+}
+
+
+@keyframes hideForm {
+    0% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 0;
+    }
+
+    100% {
+        height: 0;
+        display: none;
+        opacity: 0;
+        width: 0;
+    }
+}
+
+@keyframes showButton {
+    0% {
+        opacity: 0;
+    }
+
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.delete {
+    display: none !important;
+}
+
+.hide {
+    animation: {
+        name: hideForm;
+        duration: 1.4s;
+        timing-function: ease-in;
+        delay: 0;
+        fill-mode: forwards;
+    }
+}
+
+.show-boi {
+    opacity: 0;
+    display: block !important;
+    animation: {
+        name: showButton;
+        duration: 1s;
+        timing-function: ease-out;
+        delay: 1.4s;
+        fill-mode: forwards;
+    }
+}
+
+.therapist-request-form {
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    width: 90%;
+    color: tan;
+    outline: 2px solid tan;
+    outline-offset: -10px;
+    background: linear-gradient(to bottom, #586949,#516a45 );
+    box-shadow: 0 0 32px rgba(0, 0, 0, 0.35), 0 1px 3px rgba(0, 0, 0, 0.1);
+    background-color: #37711a;
+    margin: 30px;
+    padding: 20px;
+    align-items: start;
+    margin: 0;
+    margin-top: -16px;
+
+    > label {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: start;
+        > h3 {
+            margin-bottom: 10px;
+        }
+
+        > textarea {
+            width: 100%;
+            height: 60px !important;
+            color: #2c3133;
+            font-family: "Graphik", "Helvetica Neue", helvetica, "Apple Color Emoji", arial, sans-serif;
+        }
+    }
+    > button {
+        background-color: mediumseagreen;
+        /* background-size: cover; */
+        color: tan;
+        border: 2px solid tan;
+        padding: 8px 27px;
+        box-shadow: 0 0 32px rgba(0, 0, 0, 0.35), 0 1px 3px rgba(0, 0, 0, 0.1);
+        transition: .2s
+    }
+
+    >button:hover {
+        transition: .2s;
+        transform: scale(1.1);
+    }
+    >button:focus {
+        outline: none !important;
+    }
+
+}
+
+.enlarge-image{
+    animation: {
+        name: enlargeImage;
+        duration: 1.4s;
+        timing-function: ease-in;
+        delay: 0;
+        fill-mode: forwards;
+    }
+}
+
+input, textarea {
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #bfbfbf;
+  font-size: 16px;
+  padding-left: 12px;
+  
+}
+
+textarea {
+    resize: none;
+}
+
+input[type=text], textarea, #password-input, #signup-password-input {
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    outline: none;
+    margin: 5px 1px 3px 0px;
+    border: 1px solid #DDDDDD;
+}
+
+input[type=text]:focus, #signup-password-input:focus, textarea:focus, #password-input:focus {
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+    margin: 5px 1px 3px 0px;
+    border: 1px solid rgba(81, 203, 238, 1);
+}
