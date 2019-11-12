@@ -12,7 +12,7 @@ Mental health is a serious issue at my university. In 2017, Columbia University 
 
 Therapose stores user information securely and remembering user login sessions, resulting in a seamless authentication experience. Here is what logging in looks like:
 
-[gif of authentication]
+![](therapose_authentication_demo.gif)
 
 Storing user authentication information was done by storing password digests rather than the passwords themselves. I used the rails BCrypt gem to hash the password as follows: 
 
@@ -29,8 +29,7 @@ One thing to note is that although the user's actual password is stored in `@pas
 
 Therapose also allows patients to filter therapists by their expertise by using a dropdown menu, enabling patients to get the right kind of help easily.
 
-[gif of therapist filtering]
-
+![](therapist_filtering_demo.gif)
 
 Clicking a category in the dropdown triggers a custom fetch therapists API as follows:
 
@@ -49,7 +48,7 @@ The custom API calls a `receiveTherapist` utility function which sends an ajax r
 
 Therapose leverages ActionCables and WebRTC API to stream data between local and remote video channels, resulting in a stable video chat where the therapist and patient can communicate calmly.
 
-[gif of video chat]
+![](video_chat_demo.gif)
 
 This was done by creating WebRTC's RTCPeerConnection. The peer connection is created in the createPC function as follows:
 
