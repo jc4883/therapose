@@ -2,9 +2,9 @@
 
 Checkout the live version [here](https://therapose.herokuapp.com/).
 
-Therapose is a last resort solution to prevent the worst scenario of failing mental health. When a student needs immediate mental health attention, she can choose one of a few broad categories, and be matched appropriately to a professional. My hope for this project was to provide a last case prevention for the loss of young adults who I interact with everyday, and those I don't. 
+Therapose is a last resort solution to prevent the worst scenario of failing mental health. When a student needs immediate mental health attention, she can choose one of a few broad categories, and be matched appropriately to a professional. My hope for this project was to provide a last case prevention for the loss of young adults who I interact with everyday, and those I don't. This project is built using **React**, **Redux**, **Ruby on Rails**, **PostgreSQL**, **WebRTC**, and **ActionCable**.
 
-This project won J.P. Morgan's "Best Hack for Social Good" challenge at WHACK 2019.
+Therapose won J.P. Morgan's "Best Hack for Social Good" challenge at WHACK 2019.
 
 ## Inspiration
 
