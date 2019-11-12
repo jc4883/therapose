@@ -10,17 +10,14 @@ class PatientIndex extends React.Component {
     }
 
     componentDidMount() {
-        console.log("mounted")
         let own_id = this.props.currentUser.id
         this.props.fetchRequests(own_id);
         this.timer = window.setInterval(() => {
-            console.log("here")
             this.props.fetchRequests(own_id)
         }, 8000)
     }
 
     componentWillUnmount() {
-        console.log("unmounting")
         window.clearInterval(this.timer);
     }
 

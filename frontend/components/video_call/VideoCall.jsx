@@ -24,13 +24,11 @@ class VideoCall extends React.Component{
     App.cable.subscriptions.create(
         { channel: "CallChannel" },
     { connected: () => {
-        console.log('CONNECTED');
 
         broadcastData({ type: JOIN_CALL, from: this.userId });
     },
         received: data => {
 
-            console.log("RECEIVED: ", data);
 
             if (data.from === this.userId) return;
 

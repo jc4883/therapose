@@ -22,7 +22,6 @@ class TherapistShow extends React.Component {
 
     componentDidMount() {
         this.timer = window.setInterval(() => {
-            console.log("here");
             let button = document.getElementById("call-button");
             let requests = Object.values(this.props.requests);
             for (let i = 0; i < requests.length; i++) {
@@ -38,7 +37,6 @@ class TherapistShow extends React.Component {
     }
 
     componentWillUnmount() {
-        console.log("unmounted");
         window.clearInterval(this.timer);
     }
 
@@ -53,7 +51,6 @@ class TherapistShow extends React.Component {
     }
 
     render() {
-        console.log("rendered");
         if (this.state.call === true) {
             return <Redirect to={`/call`} />
         }
